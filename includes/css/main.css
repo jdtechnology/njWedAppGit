@@ -1,12 +1,22 @@
-body {
-	background: #bdc3c7;  /* fallback for old browsers */
+html {
+	/* background: #bdc3c7;  /* fallback for old browsers */
 	/*background-image: url("includes/images/liverpool-skyline-black-silhouette-crop.png"); WHY NO WORK? :(*/
-	background: -webkit-linear-gradient(to bottom, #F1F7F7, #7B8F9F) fixed;  /* Chrome 10-25, Safari 5.1-6 */
-	background: -o-linear-gradient(to bottom, #F1F7F7, #7B8F9F) fixed;
-	background: -moz-linear-gradient(to bottom, #F1F7F7, #7B8F9F) fixed;
-	background: linear-gradient(to bottom, #F1F7F7, #7B8F9F) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/* background: -webkit-linear-gradient(to bottom, #F1F7F7, #7B8F9F) fixed;  /* Chrome 10-25, Safari 5.1-6 */
+	/* background: -o-linear-gradient(to bottom, #F1F7F7, #7B8F9F) fixed;
+	background: -moz-linear-gradient(to bottom, #F1F7F7, #7B8F9F) fixed; */
+	/* background: linear-gradient(to bottom, #F1F7F7, #7B8F9F) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #7B8F9F, #F1F7F7) no-repeat center center fixed;  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #7B8F9F, #F1F7F7) no-repeat center center fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: anothertypewriter;
 	margin: 0;
+	height: 100%;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 @font-face {
 	font-family: anothertypewriter;

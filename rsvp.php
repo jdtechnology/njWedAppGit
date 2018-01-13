@@ -31,14 +31,14 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
         <form class="form" id="form1" method="post" action="success.php">
 
           <p class="name">
-            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="First Name" id="name" />
+            <input name="firstname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="First Name" id="name" />
           </p>
           <p class="name">
-            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Last Name" id="name" />
+            <input name="lastname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Last Name" id="name" />
           </p>
 
           <p class="email">
-            <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+            <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
           </p>
 
           <p class="attending">
@@ -50,7 +50,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
           </p>
 
           <p class="text">
-            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Additional"></textarea>
+            <textarea name="additional" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Additional"></textarea>
           </p>
 
 
@@ -60,7 +60,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
           </div>
         </form>
       </div>
-    <br><br>
+    <br><br><br><br><br>
 	<!-- </div> -->
 
 <?php //End AJAX Content.
