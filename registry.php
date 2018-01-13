@@ -24,19 +24,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 <?php } ?>
 
 	<div class="container" id="main">
-    <p><h1>Order of the day</h1></p>
-            <div id="centreUl"><ul class="carpark">
-              <li>3pm Wedding Ceremony</li>
-              <li>3.45pm Coaches arrive to take us to Oh Me Oh My</li>
-              <li>4pm Fizz and canapes</li>
-              <li>5pm Speeches</li>
-              <li>5:30pm Wedding Breakfast</li>
-              <li>8pm Party time!</li>
-              <li>8:30pm First dance</li>
-              <li>9:30pm Late Night Bites</li>
-              <li>12:45pm Last orders</li>
-              <li>1am Home time!</li>
-            </ul></div>
+    <br><br>
+    <p>Whilst your attendance at our wedding is all we ask, should you wish to bring a gift we kindly direct you to our gift list
+          </p>
+					<p>Our Gift list will open on 10th March 2018. You will then be able to use it by calling 0345 600 2202, visiting johnlewis.com or any John Lewis store.
   <br><br>
 	</div>
 
