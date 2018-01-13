@@ -1,7 +1,4 @@
 <?php
-//TEMP
-if($_COOKIE["developer"] == "true") {
-
 $page_title = "Natalie and James wedding Home";
 
 $as_json = false;
@@ -46,7 +43,3 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
    echo "\n</body>\n</html>";
     }
 ?>
-<?php
-} else {
-	header('Location: construction.php');
-}
