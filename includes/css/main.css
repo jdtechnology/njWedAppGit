@@ -173,8 +173,17 @@ img#mainimg {
 	height: 50%;
 	width: 50%;
 	display: block;
-    margin: auto;
+  margin: auto;
 	opacity:1;
+	/* border: solid 1px black; */
+	-moz-box-shadow: 5px 5px 0px #999;
+	-webkit-box-shadow: 5px 5px 0px #999;
+	box-shadow: 5px 5px 0px #999;
+
+  border: 15px solid #3e2b14;
+  padding: 10px;
+
+
 }
 
 .container{

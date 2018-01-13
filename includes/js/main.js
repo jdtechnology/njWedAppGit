@@ -7,9 +7,27 @@
 jd.vars = {
 	locationsConstruct: '<a class="ajax-nav" href="day.php">Day</a><a class="ajax-nav" href="night.php">Night</a>',
 	isTaken: 0,
-	resBool: true
+	resBool: true,
+	rotateInterval: 0,
+	rotateCount: 1,
+	imageList: ["home_1.jpeg", "home_2.jpg", "home_3.jpg", "home_4.jpg", "home_5.jpg"]
 };
-
+jd.funcs = {
+	newImg: function() {
+		if(jd.vars.rotateCount >= jd.vars.imageList.length) {
+			jd.vars.rotateCount = 0;
+		}
+		var constr = "includes/images/" + jd.vars.imageList[jd.vars.rotateCount];
+		jd.vars.rotateCount += 1;
+		return constr;
+	},
+	imageRotate: function() {
+		if(document.getElementById("mainimg") !== null) {
+			var imgHolder = document.getElementById("mainimg");
+			imgHolder.setAttribute("src", jd.funcs.newImg());
+		}
+	}
+};
 jd.navi = {
 	menuShow: function() {
 		var navBar = document.getElementById("naviBar");
@@ -59,6 +77,9 @@ jd.rsvp = {
 jd.init = function() {
 	document.getElementById("naviBar").addEventListener("click", jd.navi.menuShow);
 	//document.getElementById("naviLocation").addEventListener("click", jd.navi.showDayNight);
+	if(document.getElementById("mainimg") !== null) {
+		setInterval(jd.funcs.imageRotate, 3000);
+	}
 	if(document.getElementById("email")) {
 		var email = document.getElementById("email");
 
