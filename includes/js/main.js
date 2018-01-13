@@ -5,7 +5,9 @@
 }());
 
 jd.vars = {
-	locationsConstruct: '<a class="ajax-nav" href="day.php">Day</a><a class="ajax-nav" href="night.php">Night</a>'
+	locationsConstruct: '<a class="ajax-nav" href="day.php">Day</a><a class="ajax-nav" href="night.php">Night</a>',
+	isTaken: 0,
+	resBool: true
 };
 
 jd.navi = {
@@ -26,9 +28,48 @@ jd.navi = {
 	}
 };
 
+jd.rsvp = {
+	noneEmpty: function(id) {
+		if(document.getElementsByName(id)[0].value != "") {
+			return true;
+		} else {
+			return false;
+		}
+	},
+	valEmail: function() {
+			var emailaddr = document.getElementById("email").value;
+			var resBool = true;
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					jd.vars.isTaken = this.responseText;
+					if (jd.vars.isTaken > 0) {
+						jd.vars.resBool =  false;
+					} else {
+						jd.vars.resBool = true;
+					}
+			}
+		};
+		xhttp.open("GET", "check_email.php?email="+emailaddr, false);
+		xhttp.send();
+		return jd.vars.resBool;
+	}
+};
+
 jd.init = function() {
 	document.getElementById("naviBar").addEventListener("click", jd.navi.menuShow);
-	document.getElementById("naviLocation").addEventListener("click", jd.navi.showDayNight);
+	//document.getElementById("naviLocation").addEventListener("click", jd.navi.showDayNight);
+	if(document.getElementById("email")) {
+		var email = document.getElementById("email");
+
+		email.addEventListener("input", function (event) {
+		  if (!jd.rsvp.valEmail()) {
+		    email.setCustomValidity("This email address is already in use!");
+		  } else {
+		    email.setCustomValidity("");
+		  }
+		});
+	}
 };
 
 

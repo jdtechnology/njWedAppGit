@@ -31,14 +31,14 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
         <form class="form" id="form1" method="post" action="success.php">
 
           <p class="name">
-            <input name="firstname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="First Name" id="name" />
+            <input name="firstname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="First Name" id="name" required>
           </p>
           <p class="name">
-            <input name="lastname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Last Name" id="name" />
+            <input name="lastname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Last Name" id="name" required>
           </p>
 
           <p class="email">
-            <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+            <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" required>
           </p>
 
           <p class="attending">
