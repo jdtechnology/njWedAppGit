@@ -27,6 +27,17 @@ html {
 	src: url("shorelines_script_bold.otf");
 }
 
+h1 {
+	font: bold;
+	filter: brightness(55%);
+}
+h2 {
+	filter: brightness(55%);
+}
+#tripadvisor {
+	margin: 0 auto;
+	display: block;
+}
 #footimg {
 	z-index: 0;
 	margin:0 auto; /* Required */
@@ -373,4 +384,12 @@ input:focus, textarea:focus {
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
   border: 3px solid rgba(0,0,0,0);
+}
+
+#livTable img {
+	width: 100%;
+	height: 100%;
+}
+#livTable {
+	padding: 20px 20px 20px 20px;
 }

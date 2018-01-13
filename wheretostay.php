@@ -1,13 +1,15 @@
 <?php
-$page_title = "Location Main";
+$page_title = "Natalie and James wedding Home";
 
 $as_json = false;
 if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
   $as_json = true;
   ob_start();
 } else {
-  ?>
+?>
+
 <!doctype html>
+
 <html>
 <head>
 <?php
@@ -20,13 +22,15 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 <div id="ajax-content">
 <?php } ?>
+
 	<div class="container" id="main">
-		<p><span class="required">3</span>Text to link to day time location <a class="ajax-nav" href="day.php">Daytime location link</a></p>
-		 <!--Links to all "location" pages-->
-		<p><span class="required">4</span>Text to link to night time location <a class="ajax-nav" href="day.php">Night time location link</a></p>
+    <br><br>
+    <h1>Here are some hotel suggestion (tripadvisor)</h1>
+        <iframe src="https://www.tripadvisor.co.uk/Hotels-g186337-Liverpool_Merseyside_England-Hotels.html" id="tripadvisor" width="80%" height="900px">
+  <br><br>
 	</div>
 
-<?php
+<?php //End AJAX Content.
 	if ($as_json) {
 		echo json_encode(array("page" => $page_title, "content" => ob_get_clean()));
 	} else {
@@ -34,7 +38,8 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 </div>
 
 <?php require("footer.php"); ?>
+
 <?php
-	echo "\n</body>\n</html>";
+   echo "\n</body>\n</html>";
     }
 ?>
