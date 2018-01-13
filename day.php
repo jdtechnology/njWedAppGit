@@ -24,10 +24,18 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 <?php } ?>
 
 	<div class="container" id="main">
-		<p><span class="required">5</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum turpis vel diam finibus, vel vehicula ligula aliquet. Vivamus vel risus aliquet, scelerisque ipsum id, hendrerit diam. Sed cursus, est sed efficitur aliquet, eros lacus mollis ligula, ac finibus ante justo vel turpis. Aenean ac neque sapien. Nulla non luctus massa, eget fermentum lacus.</p>
+    <br>
+    <p><!--<span class="required">5</span>-->Our wedding ceremony is being held at the beautiful St. Georges Hall in the centre of Liverpool. You will enter the hall via the South Entrance and head to the Power and Glory Landing.  If you have difficulty using the steps, you may enter the Heritage Entrance and take the lift to level 2 (the Power and Glory Landing is opposite the lift exit).
+                                            St. Georges is just over the road from Liverpool Lime Street train station and there are many public carparks within a short walk of the hall including:
+                                            </p>
+                                            <ul class="carpark">
+                                              <li>Lime Street Station Long Stay, Lord Nelson Street, L3 5QB.</li>
+                                              <li>St John's Shopping Centre, St George's Place, L1 1LQ.</li>
+                                              <li>Queen Square, Whitechapel, L1 1RH.</li>
+                                            </ul>
 		<!--Update maps iframe to my style of embed.-->
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe id="gMaps" width="90%" height="auto" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxYehPjshe0gRHDrHXLpplt0&key=AIzaSyC7_nSrdaPBru14Q6uYHB7XgiQvnHqD32s" allowfullscreen></iframe>
-		<p><span class="required">6</span>Sed quis odio nec risus pellentesque bibendum id eget augue. Donec egestas a eros nec bibendum. Aliquam facilisis mattis metus, a lacinia quam venenatis eu. Duis dolor turpis, dictum in nisl nec, pulvinar semper sem. Vivamus quis auctor magna. Suspendisse dignissim suscipit pulvinar. Maecenas rhoncus lobortis consequat. Nam lorem elit, consequat eget quam vitae, ullamcorper ullamcorper diam. Etiam vitae erat sed tellus consectetur cursus vitae eu tortor. Suspendisse id arcu quis diam efficitur vulputate. Praesent eget enim fringilla, lobortis lacus eu, viverra neque.</p>
+  <br><br>
 	</div>
 
 <?php //End AJAX Content.

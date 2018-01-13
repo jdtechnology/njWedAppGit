@@ -20,6 +20,9 @@ jd.navi = {
 	showDayNight: function() {
 		document.getElementById("naviLocations").classList.toggle("yesShow");
 		//document.getElementById("naviLocations").innerHTML = jd.vars.locationsConstruct;
+	},
+	injectHtml: function() {
+		document.getElementById("naviLocations").innerHTML = "<a class=\"ajax-nav\" href=\"day\">Day</a><a class=\"ajax-nav\" href=\"night\">Night</a>"
 	}
 };
 

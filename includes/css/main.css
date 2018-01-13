@@ -101,7 +101,7 @@ body {
 }
 
 /***************************************/
-.container{	
+.container{
 	/* Rounded corners */
 	-moz-border-radius:20px;
 	-khtml-border-radius: 20px;
@@ -156,10 +156,14 @@ img#mainimg {
 	opacity:1;
 }
 
-.container{	
+.container{
 	/* Rounded corners */
 	-moz-border-radius:20px;
 	-khtml-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	border-radius:20px;
+}
+.carpark {
+	color: rgb(159,184,205);
+	filter: brightness(55%);
 }
