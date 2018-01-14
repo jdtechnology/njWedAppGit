@@ -185,6 +185,13 @@ img#mainimg {
 
 
 }
+.cent {
+	z-index:inherit;
+	height: 50%;
+	width: 50%;
+	display: block;
+  margin: auto;
+}
 
 .container{
 	/* Rounded corners */

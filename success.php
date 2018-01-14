@@ -91,6 +91,6 @@ setcookie("attending", $attending_int, time() + 2.419e+6);
 if($success) {
 	header('Location: redirect.php?urlfrom=rsvp');
 } else {
-	header('Location: rsvp.php?complete=' . $errmess);
+	header('Location: rsvp.php?complete=0');
 }
 ?>
