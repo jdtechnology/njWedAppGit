@@ -279,14 +279,14 @@ img#mainimg {
 
 /* Icons ---------------------------------- */
 #name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-image: url(../images/form/name.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
 #name:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-image: url(../images/form/name.svg);
 	background-size: 30px 30px;
 	background-position: 8px 5px;
   background-position: 11px 8px;
@@ -294,21 +294,21 @@ img#mainimg {
 }
 
 #email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-image: url(../images/form/email.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
 #email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-image: url(../images/form/email.svg);
 	background-size: 30px 30px;
   background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
 #comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-image: url(../images/form/comment.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
@@ -383,7 +383,7 @@ input:focus, textarea:focus {
 .field-select {
 	width: 100%;
 	height: 60px;
-	background-image: url(https://cdn2.iconfinder.com/data/icons/dark-action-bar-2/96/select_all-512.png);
+	background-image: url(../images/form/select_all-512.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
