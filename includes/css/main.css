@@ -145,6 +145,7 @@ h2 {
 
 #main p {
 	filter: brightness(55%);
+	padding: 10px 10px 10px 10px
 }
 
 .noShow {
