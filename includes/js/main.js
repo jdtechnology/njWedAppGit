@@ -10,7 +10,7 @@ jd.vars = {
 	resBool: true,
 	rotateInterval: 0,
 	rotateCount: 1,
-	imageList: ["home_1.jpeg", "home_2.jpg", "home_3.jpg", "home_4.jpg", "home_5.jpg"]
+	imageList: ["home_1.JPG", "home_2.jpg", "home_3.jpg", "home_4.jpg", "home_5.JPG", "home_6.JPG"]
 };
 jd.funcs = {
 	newImg: function() {
