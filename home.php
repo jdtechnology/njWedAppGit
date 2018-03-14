@@ -26,7 +26,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 	<div class="container" id="main">
     <br><br>
 		<p>Welcome to our wedding website! We hope you find this information helpful as you plan your trip to Liverpool. We are so excited to celebrate our big day with all of you!</p>
-		<img class="central" id="mainimg" src="includes/images/home_1.jpeg" alt="Loading...">
+		<img class="central" id="mainimg" src="includes/images/home_1.JPG" alt="Loading...">
   <br><br>
 	</div>
 
