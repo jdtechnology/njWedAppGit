@@ -10,7 +10,7 @@ jd.vars = {
 	resBool: true,
 	rotateInterval: 0,
 	rotateCount: 1,
-	imageList: ["home_1.JPG", "home_2.jpg", "home_3.jpg", "home_4.jpg", "home_5.JPG", "home_6.JPG"]
+	imageList: ["home_1.jpg", "home_2.jpg", "home_3.jpg", "home_4.jpg", "home_5.jpg"]
 };
 jd.funcs = {
 	newImg: function() {
@@ -43,6 +43,12 @@ jd.navi = {
 	},
 	injectHtml: function() {
 		document.getElementById("naviLocations").innerHTML = "<a class=\"ajax-nav\" href=\"day\">Day</a><a class=\"ajax-nav\" href=\"night\">Night</a>"
+	},
+	copyCodeToCB: function() {
+	var txt = document.getElementById("codeInput");
+	txt.select();
+	document.execCommand("Copy");
+	document.getElementById("copyButt").classList.toggle("copyClicked");
 	}
 };
 
@@ -79,6 +85,9 @@ jd.init = function() {
 	//document.getElementById("naviLocation").addEventListener("click", jd.navi.showDayNight);
 	if(document.getElementById("mainimg") !== null) {
 		setInterval(jd.funcs.imageRotate, 3000);
+	}
+	if(document.getElementById("codeForJL") !== null) {
+	document.getElementById("copyButt").addEventListener("click", jd.funcs.copyCodeToCB)
 	}
 	if(document.getElementById("email")) {
 		var email = document.getElementById("email");

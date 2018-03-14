@@ -414,3 +414,29 @@ input:focus, textarea:focus {
 #livTable {
 	padding: 20px 20px 20px 20px;
 }
+#codeForJL {
+	font-size: 70px;
+	background-color: red;
+}
+#cCodeToClip {
+	padding-top: 0px;
+	height: 70px;
+	width: 60px;
+}
+#codeAndCopy {
+	margin: 0 auto;
+}
+#copyButt {
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+}
+.copyClicked {
+	background-color: green !important;
+}
+#codeInput {
+	visibility: hidden;
+}
